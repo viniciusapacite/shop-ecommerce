@@ -1,0 +1,339 @@
+@import "responsive.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body, html {
+    min-height: 100%;
+    width: 100%;
+}
+
+.clear {
+    clear: both;
+}
+
+.d-flex {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+}
+.d-flex-2 {
+    display: flex;
+    width: 50%;
+    padding: 20px;
+    gap: 60px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid #d4d4d4;
+}
+
+.d-flex-2 > div > h4::before {
+    content: '';
+    width: 2px;
+    height: 0px;
+    background-color: rgba(78, 76, 76, 0.555);
+    border-left: 2px solid #d4d4d4;
+    position: relative;
+    left: -40px;
+    top: 10px;
+}
+
+.container-3 {
+    margin-top: 2rem;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.container-2 {
+    width: 95%;
+    height:65vh;
+    margin: 0 auto;
+    display:grid;
+    grid-template-areas: 
+      'img-todo img-metade-1'
+      'img-todo img-metade-2'
+      ;
+  }
+  .text-align {
+    width: 50%;
+    text-align: left;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 2%;
+    left: 35%;
+    top: 50%;
+    color: white;
+  }
+
+  .text-align > h3, .text-align-2 > h3, .text-align-3> h3 {
+    margin: 10px 0;
+    font-size: 30px;
+  }
+
+  .text-align-2 {
+    width: 50%;
+    text-align: end;
+    position: relative;
+    left: 42%;
+    top: 44%;
+    color: white;
+  }
+
+  .text-align-3 {
+    width: 50%;
+    text-align: start;
+    position: relative;
+    left: 7%;
+    top: 44%;
+    color: white;
+  }
+  
+  .tranding-1 { grid-area: img-todo;  background-image: url(assets/trending-1.jpg); background-position: top center;}
+  .tranding-2 { grid-area: img-metade-1;  background-image: url(assets/trending-2.jpg); background-position: top center;}
+  .tranding-3 { grid-area: img-metade-2;  background-image: url(assets/trending-3.jpg); background-position: top center;}
+
+.d-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.d-col-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.border-space {
+    margin: 0 auto; 
+}
+
+.tranding {
+    width: 100%;
+    height: 670px;
+    background-image: url(assets/trending-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: end;
+    padding: 30% 4%;
+}
+
+
+.d-flex > img {
+    margin: 10px;
+}
+
+.carrinho {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.carrinho > img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+nav.menu {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+
+.menu > ul > a{
+    color: #413c3c;
+    margin: 0 20px;
+}
+
+.text-main {
+    background-image: url(assets/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding:10%;
+    position: relative;
+}
+
+.text-main::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height:100%;
+    background-color: #156e28;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    opacity: 0.2;
+}
+
+.text-main > h1 {
+    font-size: 30px;
+    color: white;
+    z-index: 3;
+    position: relative;
+}
+.text-main  > p {
+    width: 40%;
+    margin-top: 20px;
+    line-height: 24px;
+    color: rgb(255, 255, 255);
+    z-index: 3;
+    position: relative;
+}
+
+.text-main > button {
+    border: none;
+    padding: 10px 15px;
+    color: #413c3c;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    z-index: 3;
+    position: relative;
+}
+
+.center {
+    margin:20px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.center-2 {
+    margin: 5rem auto;
+    text-align: start;
+    max-width: 100%;
+    width: 950px;
+    height: 300px;
+    padding: 80px;
+    border: 1px solid #d4d4d4;
+    background-image: url(assets/nedwslater-banner.jpg);
+    background-position: top center;
+}
+
+.center > h3 {
+    font-size: 30px;
+    margin: 10px;
+}
+
+.d-flex > input[type=button] {
+   border: none;
+   padding: 13px 25px;
+   cursor: pointer;
+   background-color: #d4d4d4;
+   position: relative;
+   left: -19%;
+}
+
+.d-flex > input[type=email] {
+    border: none;
+    padding: 13px 25px;
+    background-color: #d4d4d4;
+    width: 50%;
+    outline: none;
+}
+
+.d-flex > input[type=email]::placeholder {
+    border: none;
+    padding: 13px 25px;
+    background-color: #d4d4d4;
+    width: 50%;
+    outline: none;
+}
+
+/* --------------------------------- produtos-single -------------------------- */
+
+.produtos {
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 100px 0;
+}
+
+.produtos-single {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.produtos-single > img {
+    width: 250px;
+    height: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.produtos-single > p {
+    margin: 20px;
+}
+
+/* ----------------------- princ-img ---------------------- */
+
+.princ-product {
+        display:grid;
+        grid-template-columns: 32% 32% 32%;
+        justify-content: center;
+        gap: 10px;
+        margin: 5px auto;
+        padding-bottom: 5rem;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+}
+
+
+.princ-single {
+
+    padding: 30px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+    background-image: url(assets/featured-background.jpg);
+}
+
+.princ-single > a {
+    color: #413c3c;
+    border-bottom: 2px solid #413c3c;
+    width: 100px;
+}
+
+.princ-img {
+    width: 30%;
+    height: 100%;
+    float: right;
+  
+    display: flex;
+    left: 65%;
+    top: 5%;
+    position: absolute;
+}
+
+.princ-img > img {
+    width: 90%;
+    max-width: 100%;
+    height: 90%;
+    float: right;
+}

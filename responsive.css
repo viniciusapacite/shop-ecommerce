@@ -1,0 +1,90 @@
+@media screen and (min-width:300px) and (max-width:768px){
+    html , body {
+        
+    }
+
+    nav.menu {
+        display: none;
+    }
+
+    .menu > ul {
+        display: none;
+    }
+
+    div.text-main > p {
+        width: 100%;
+    }
+
+    div.princ-product {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    div.container-2 {
+        width: 95%;
+        height:750px;
+        margin: 0 auto;
+        display:grid;
+        grid-template-areas: 
+          'img-todo img-todo'
+          'img-metade-1 img-metade-1'
+          'img-metade-2 img-metade-2'
+          ;
+    }
+
+    .tranding-1, .tranding-2, .tranding-3 {
+        background-size: cover;
+    }
+
+    div.text-align {
+        width: 100%;
+        text-align: center;
+        position: relative;
+        left: 0;
+    }
+    .c-response {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    div.c-response > input {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .c-response > input[type=button] {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .c-response .d-flex  {
+        width: 100%;
+        position: none;
+        justify-content: center;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    div.d-flex > input[type=button]{
+        position:none; 
+        left: 0;     
+    }
+    div.d-flex > input[type=email]{
+        width: 100%;
+        position:none; 
+        margin-bottom: 10px;
+        left: 0;     
+    }
+
+    section.center-2 {
+        height: 100%;
+        width: 100%;
+        padding: 40px;
+    }
+    div.princ-img > img {
+        width: 100%;
+        height: 90px;
+        margin: 40px 0;
+    }
+}
