@@ -53,8 +53,9 @@ body, html {
 
 .container {
     width: 100%;
-    height: 100%;
+    height: auto;
     margin: 0 auto;
+    position: relative;
 }
 .container-2 {
     width: 95%;
@@ -117,6 +118,28 @@ body, html {
     gap: 20px;
 }
 
+.d-col-3 {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 60px;
+    position: absolute;
+
+    z-index: 20;
+}
+
+.fixed {
+    position: fixed;
+    z-index: 20;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 4px 4px 60px 1px rgba(85, 85, 85, 0.507);
+}
+
+.menu-toggle{
+    cursor: pointer;
+    display: none;
+}
+
 
 .border-space {
     margin: 0 auto; 
@@ -145,8 +168,8 @@ body, html {
 }
 
 .carrinho > img {
-    width: 40px;
-    height: 40px;
+    width: 100%;
+    height: 30px;
     cursor: pointer;
 }
 

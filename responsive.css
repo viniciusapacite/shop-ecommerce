@@ -3,6 +3,37 @@
         
     }
 
+
+    div.menu-toggle{
+        cursor: pointer;
+        display: block;
+    }
+
+    .d-col-3 {
+        display: none;
+        flex-direction: column;
+        gap: 0px;
+        margin-top: 60px;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%);
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        height: 300px;
+    
+        z-index: 20;
+    }
+    .d-col-3 > a {
+        padding-top: 3rem;
+    }
+
+    .fixed {
+        position: fixed;
+        z-index: 40;
+    }
+
     nav.menu {
         display: none;
     }

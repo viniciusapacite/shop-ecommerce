@@ -86,3 +86,18 @@ product.map((val)=>{
 
 console.log(viewMore)
 
+
+// -----------menu-toogle------------
+
+let menu = document.querySelector('.menu-toggle');
+menu.addEventListener('click', () => {
+    let nav = document.querySelectorAll('.d-col-3');
+
+    for(var i = 0; i < nav.length; i++){
+        if (nav[i].style.display == 'flex') {
+            nav[i].style.display = 'none';
+        } else {
+            nav[i].style.display = 'flex';
+        }
+    }
+})
