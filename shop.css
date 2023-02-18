@@ -187,6 +187,11 @@ nav.menu {
     margin: 0 20px;
 }
 
+.menu > ul > a:hover{
+    color: rgb(140, 140, 240);
+    
+}
+
 .text-main {
     background-image: url(assets/banner.jpg);
     background-repeat: no-repeat;
@@ -385,6 +390,13 @@ nav.menu {
     color: white;
 }
 
+.d-col-4 > span:hover  {
+    padding-left: 10px;
+}
+.d-col-4 > span:hover > a {
+    color: rgb(140, 140, 240);
+}
+
 .d-col-4 > span > a {
     color: white;
 }
@@ -394,9 +406,20 @@ nav.menu {
     width: 100%;
     display: grid;
     grid-template-columns: 20% 20% 20% 20%;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.842);
     justify-content: center;
     color: white;
     margin: 0 auto;
     padding: 40px 0;
+}
+
+.d-grid-2 {
+    display: grid;
+    grid-template-columns: 50%;
+    justify-content: center;
+}
+.d-flex-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
