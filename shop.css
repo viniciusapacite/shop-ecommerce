@@ -382,6 +382,9 @@ nav.menu {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    justify-content: start;
+    padding: 0;
+    gap: 10px;
 }
 
 .d-col-4 > img {
@@ -390,6 +393,7 @@ nav.menu {
 
 .d-col-4 > span {
     margin: 7px 0;
+
     color: white;
 }
 
