@@ -429,6 +429,8 @@ nav.menu {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    border: 1px solid rgba(105, 105, 105, 0.329);
+    padding: 15px;
 }
 
 .hover-select:hover {
