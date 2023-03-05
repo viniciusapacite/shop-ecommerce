@@ -172,13 +172,15 @@ menu.addEventListener('click', () => {
 
  function atualizarCarrinho(){
      var carrinho = document.querySelector('#meu-carrinho');
+
     carrinho.innerHTML = '';
      product.map((val)=>{
         if(val.quantidade > 0){
             carrinho.innerHTML += `
                 <div class='store'>
-                <br>
-                <p>`+val.name+` | quantidade: `+val.quantidade+` &nbsp;&nbsp;&nbsp;<strong>X</strong></p>
+                <img class='img-buy' src="`+val.image+`"/>
+             
+                <p>`+val.name+` | quantidade: `+val.quantidade+` &nbsp;&nbsp;&nbsp;<strong class='remove'>X</strong></p>
                 <hr>
                 <br>
                 </div>
@@ -186,7 +188,14 @@ menu.addEventListener('click', () => {
             `   
         }
     })
+
+
+
+
 }
+
+
+
 
 
 var btn = document.getElementsByClassName('btn');
@@ -198,7 +207,6 @@ for(var i = 0; i < btn.length; i++) {
         product[key].quantidade++;
         atualizarCarrinho();
         return false;
-        
     
     })
 }

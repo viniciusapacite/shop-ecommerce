@@ -5,6 +5,17 @@
         display: block;
     }
 
+    div#meu-carrinho {
+        width: 100%;
+        margin: 0 auto;
+       position: absolute;
+       left: 50%;
+       transform: translate(-50%);
+    }
+
+    div.store {
+        margin: 0 auto;
+    }
     div.menu-toggle > img {
         margin-top: 4px;
     }
